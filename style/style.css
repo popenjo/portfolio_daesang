@@ -1,3 +1,100 @@
+body, html {scroll-behavior:smooth;}
+
+/* all */
+header, main, footer {letter-spacing:-0.02em;}
+/* header */
+header {width:1920px;}
+header .h_all {
+    width:90%;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    margin:30px 120px; z-index:90;
+    position:absolute; left:0; top:0;
+}
+header .h_all h1 {}
+header .h_all h1 a {}
+header .h_all h1 a img {}
+header .h_all .h_right {
+    display:flex; flex-flow:row nowrap; align-items:center;
+}
+header .h_all .h_right .inquiry {
+    background:rgba(255,255,255,0.5); color:#fff;
+    padding:8px; border:1px solid #fff; border-radius:7px;
+    margin-right:35px;
+}
+header .h_all .h_right .language {display:flex; flex-flow:row nowrap; align-items:center; margin-right:30px;}
+header .h_all .h_right .language em {color:#fff; margin-right:10px; font-size:1rem;}
+header .h_all .h_right .language #lang_btn {background:none;}
+header .h_all .h_right .language #lang_btn img {width:18px; height:18px;}
+header .h_all .h_right .language .english {display:none;}
+header .h_all .h_right .language span {}
+header .h_all .h_right #search_btn {background:none; margin-right:30px;}
+header .h_all .h_right #search_btn img {width:25px; height:25px;}
+header .h_all .h_right .menu_btn {display:flex; flex-flow:column nowrap; background:none;}
+header .h_all .h_right .menu_btn:hover span:first-child {transform:translateX(8px);}
+header .h_all .h_right .menu_btn:hover span:last-child {transform:translateX(-8px);}
+header .h_all .h_right .menu_btn span {
+    display:inline-block; content:'';
+    width:30px; height:3px; background:#fff;
+    border-radius:50px; margin-bottom:6px;
+    transition:all 0.5s;
+}
+/* 검색창 */
+header .searchpage {
+    width:100%;
+    position:absolute; left:0; top:0;
+    z-index:999;
+}
+header .searchpage fieldset {display:flex; align-items: center; position: relative;}
+header .searchpage fieldset #search_closer {background:none; display:flex; flex-flow:column; position:absolute; top:100px; right:100px;}
+header .searchpage fieldset #search_closer span {
+    display:inline-block; width:40px; height:5px;
+    background:#a9a9a9; 
+}
+header .searchpage fieldset #search_closer span:first-child {transform:rotate(45deg);}
+header .searchpage fieldset #search_closer span:last-child {transform:translateY(-5px) rotate(-45deg);}
+header .searchpage fieldset #searchtxt {
+    width:100%; height:100vh; text-align:center;
+    background:rgba(0,0,0,0.8); color:#fff;
+    font-size:1.15rem;
+}
+header .searchpage fieldset #searchtxt::placeholder {color:rgba(255,255,255,0.7);}
+/* 메뉴창 */
+header .menu_all {
+    width:100%; height:60vh;
+    z-index:999; position:absolute; left:0; top:0;
+    background:#FFF;
+}
+header .menu_all .menu {
+    width:100%; height:200px;
+    display:flex;
+    border-top:1px solid #d9d9d9;
+}
+header .menu_all .closer {
+    float:right; clear:both;
+    margin:30px 30px 30px 0;
+}
+header .menu_all .closer span {
+    display:inline-block; width:35px; height:5px;
+    background:#0279bb; border-radius:50px;
+    transition:all 0.5s;
+}
+header .menu_all .closer span:first-child {transform:translateX(40px) rotate(-40deg);}
+header .menu_all .closer span:last-child {transform:rotate(45deg);}
+header .menu_all .closer:hover span:first-child {transform:rotate(0) translateX(30px);}
+header .menu_all .closer:hover span:last-child {transform:translateY(10px) rotate(0);}
+header .menu_all .menu .m_all {
+    width:100%; height:100%;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-evenly;
+    margin-top:30px;
+}
+header .menu_all .menu ul li {}
+header .menu_all .menu ul li a {color:#0279bb;}
+header .menu_all .menu ul li ul {display:flex; flex-flow:column nowrap; }
+header .menu_all .menu ul li > ul > li {margin-top:20px;}
+header .menu_all .menu ul li > ul > li > a {color:#000; transition:all 0.3s;}
+header .menu_all .menu ul li > ul > li > a:hover {color:#888;}
 /* main */
 main {}
 main #scrolltop {
@@ -167,3 +264,22 @@ main .fifth .f_right .finance  {
 main .fifth .f_right .finance:hover img {transform:translateX(10px);}
 main .fifth .f_right .finance a {font-size:1.2rem; font-weight:600; color:#0279bb;}
 main .fifth .f_right .finance img {width:18px; height:18px; transition:all 0.8s;}
+/* footer */
+footer {
+    height:20vh;
+    display:flex; flex-flow:row nowrap; align-items: center;
+    justify-content:space-between; margin:0 180px;
+}
+footer .footer_left {display:flex;}
+footer .footer_left h1 {}
+footer .footer_left h1 a {}
+footer .footer_left h1 a img {}
+footer .footer_left .add_all {margin-left:100px;}
+footer .footer_left .add_all address {color:#888; line-height:1.2rem;}
+footer .footer_left .add_all .copyright {margin-top:10px; color:#888;}
+footer .affiliate {
+    display:flex; align-items: center;
+    border:1px solid #0279bb; padding:15px; border-radius:50px;
+}
+footer .affiliate a {color:#0279bb; margin-right:35px;}
+footer .affiliate img {width:18px; height:18px;}
