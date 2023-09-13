@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/media.css">
     <title>대상그룹</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
@@ -91,11 +92,11 @@
     </header>
     <main>
         <button type="button" id="scrolltop"><img src="./images/top.png" alt="스크롤버튼"></button>
-        <div class="first">
+        <div class="first section">
             <img src="./images/mouse_whiht.png" alt="마우스스크롤">
             <video src="./video/daesang.mp4" autoplay muted loop></video>
         </div>
-        <div class="second"><!-- bgimg -->
+        <div class="second section"><!-- bgimg -->
             <div class="second_all">
                 <div class="s_top">
                     <div class="s_title">
@@ -139,7 +140,7 @@
                 </ul>
             </div>
         </div>
-        <div class="third">
+        <div class="third section">
             <div class="third_all">
                 <p class="t_title">미래의 <em>혁신적인 고민</em>을 하며<br>일류 기업으로 도약합니다.</p>
                 <p>대상그룹의 모든 기업활동의 출발은 고객을 위한 가치 창조에서 시작됩니다.<br>대상그룹은 고객의 신뢰와 사랑을 바탕으로 글로벌 기업으로 나아갑니다.</p>
@@ -177,7 +178,7 @@
                 </ul>
             </div>
         </div>
-        <div class="fourth">
+        <div class="fourth section">
             <div class="fourth_all">
                 <h2><em>DAESANG</em> NEWS</h2>
                 <ul class="news">
@@ -228,7 +229,7 @@
                 </ul>
             </div>
         </div>
-        <div class="fifth">
+        <div class="fifth section">
             <div class="f_left">
                 <div class="f_left_all">
                     <div class="ir_title">
@@ -269,5 +270,29 @@
         </div>
     </footer>
     <script src="./js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            var $html = $("html, body"); // html 및 body 선택
+            var page = 1;
+            var lastPage = $(".section").length;
+
+            $html.animate({ scrollTop: 0 }, 10);
+
+            $(window).on("wheel", function (e) {
+                if ($html.is(":animated")) return;
+
+                if (e.originalEvent.deltaY > 0) {
+                    if (page == lastPage) return;
+                    page++;
+                } else if (e.originalEvent.deltaY < 0) {
+                    if (page == 1) return;
+                    page--;
+                }
+
+                var posTop = (page - 1) * $(window).height();
+                $html.animate({ scrollTop: posTop }, 500); // 스크롤 애니메이션 추가 (0.5초 속도)
+            });
+        });
+    </script>
 </body>
 </html>
