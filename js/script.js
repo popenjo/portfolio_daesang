@@ -31,16 +31,13 @@ menu_btn.addEventListener('click',function(){
 closer.addEventListener('click',function(){
     menu.style.transform = 'translateY(-100%)';
 
-    // 모든 디테일 요소를 숨깁니다.
-    detailsLists.forEach((detailsList, index) => {
-        detailsList.style.display = 'none';
-        groupImgs[index].style.transform = 'rotate(0deg)';
-    });
-
     // 모든 디테일 요소의 상태를 숨겨진 상태로 설정합니다.
     isDetailsVisible.fill(false);
 })
-
+// 스크롤 시 메뉴창 숨기기
+window.addEventListener('scroll', function () {
+    menu.style.transform = 'translateY(-100%)';
+});
 
 const search_page = document.querySelector('.searchpage')
 const search_closer = document.querySelector('#search_closer')
@@ -68,3 +65,8 @@ search_closer.addEventListener('click',function(){
     // 모든 디테일 요소의 상태를 숨겨진 상태로 설정합니다.
     isDetailsVisible.fill(false);
 })
+
+// 스크롤 시 검색 창 숨기기
+window.addEventListener('scroll', function () {
+    search_page.style.transform = 'translateY(-100%)';
+});

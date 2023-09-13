@@ -13,7 +13,7 @@ header .h_all {
 }
 header .h_all h1 {}
 header .h_all h1 a {}
-header .h_all h1 a img {}
+header .h_all h1 a img {width:100%;}
 header .h_all .h_right {
     display:flex; flex-flow:row nowrap; align-items:center;
 }
@@ -45,7 +45,7 @@ header .searchpage {
     position:absolute; left:0; top:0;
     z-index:999;
 }
-header .searchpage fieldset {display:flex; align-items: center; position: relative;}
+header .searchpage fieldset {display:flex; align-items: center;}
 header .searchpage fieldset #search_closer {background:none; display:flex; flex-flow:column; position:absolute; top:100px; right:100px;}
 header .searchpage fieldset #search_closer span {
     display:inline-block; width:40px; height:5px;
@@ -117,7 +117,7 @@ main .first img {
     100% {transform:translateY(-25px);}
 }
 main .second {
-    width:100%; height:105vh;
+    width:100%; height:110vh;
     background:url(../images/bg2.jpg) no-repeat;
     display:flex; align-items: center; justify-content: center;
 }
@@ -177,7 +177,7 @@ main .second .second_all .s_btm li:nth-child(3) .esg .esg_title h2 {font-size: 1
 main .second .second_all .s_btm li:nth-child(3) .esg .esg_title h2 img {}
 main .second .second_all .s_btm li:nth-child(3) .esg .esg_title p {}
 main .third {
-    width:100%; height:100vh;
+    width:100%; height:105vh;
     background:url(../images/s6-bg.png) no-repeat;
     display:flex; flex-flow:column nowrap; justify-content: center;
 }

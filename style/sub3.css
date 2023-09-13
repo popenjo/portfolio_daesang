@@ -9,11 +9,11 @@ main .esg_chapter1 {margin-top:220px; margin-bottom:500px;}
 main .esg_chapter1 .group {display:flex; flex-flow:column nowrap; align-items: center;}
 main .esg_chapter1 .group h2 {margin-bottom:40px; font-size:1.7rem; line-height:1.5em;}
 main .esg_chapter1 .group h2 em {font-size:1.7rem; font-weight:600; color:#0279BB;}
-main .esg_chapter1 .bg1 {}
-main .esg_chapter1 .bg1 img {opacity:0.5; position:relative; width:100%; height:100%;}
+main .esg_chapter1 .bg1 {position:relative; width:100%;}
+main .esg_chapter1 .bg1 img {opacity:0.5; height:100%;}
 main .esg_chapter1 .bg1 .explanation {
     width:100%;
-    position:absolute; top:900px; 
+    position:absolute; top:250px; left:0;
     display:flex; align-items: center;
     justify-content:space-around;
 }
