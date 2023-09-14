@@ -1,4 +1,14 @@
 main {}
+main .title_bg {
+    height:400px;
+    background:url(../images/dylan.png) no-repeat;
+    display:flex; align-items: center;
+    justify-content: center; text-align:center;
+    }
+main .title_bg p {
+    font-size:2.3rem; font-weight:600;
+    color:#fff; line-height:70px;
+}
 main .main_all {display:flex; flex-flow:column nowrap; align-items: center;}
 main .main_all .ci_all {margin-top:140px;}
 main .main_all .ci_all .ci_top {}

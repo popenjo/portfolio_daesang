@@ -1,25 +1,41 @@
 main {}
+main .title_bg {
+    height:400px;
+    background:url(../images/puzzlu2.png) no-repeat;
+    display:flex; align-items: center;
+    justify-content: center; text-align:center;
+    }
+    main .title_bg p {
+        font-size:2.3rem; font-weight:600;
+        color:#fff; line-height:70px;
+    }
+main .title_bg p em { 
+    font-size:2.3rem; font-weight:600; 
+    color:#C5EAFF;
+}
 main .page_btn {}
 main .page_btn li {background:#fff; border:1px solid #d9d9d9; border-bottom:none; margin-right:25px;}
-main .page_btn li:first-child {background:#fff; border:1px solid #0279BB; border-bottom:none;}
+main .page_btn li:first-child {background:#fff;}
 main .page_btn li:last-child {margin-right:0;}
 main .page_btn li a {color:#888;}
 main .page_btn li:first-child a {color:#0279BB;}
-main .esg_chapter1 {margin-top:220px; margin-bottom:500px;}
-main .esg_chapter1 .group {display:flex; flex-flow:column nowrap; align-items: center;}
-main .esg_chapter1 .group h2 {margin-bottom:40px; font-size:1.7rem; line-height:1.5em;}
-main .esg_chapter1 .group h2 em {font-size:1.7rem; font-weight:600; color:#0279BB;}
+main .esg_chapter1 {margin-top:100px;}
 main .esg_chapter1 .bg1 {position:relative; width:100%;}
-main .esg_chapter1 .bg1 img {opacity:0.5; height:100%;}
+main .esg_chapter1 .bg1 img {}
 main .esg_chapter1 .bg1 .explanation {
     width:100%;
     position:absolute; top:250px; left:0;
     display:flex; align-items: center;
     justify-content:space-around;
 }
-main .esg_chapter1 .bg1 .explanation h2 {font-size:1.85rem; font-weight:700; color:#3A3A3A;}
-main .esg_chapter1 .bg1 .explanation p {font-size:1.25rem; line-height:40px; color:#3A3A3A;}
-main .esg_chapter2 {margin-bottom:500px; position: relative; width:100%;}
+main .esg_chapter1 .bg1 .explanation h2 {transform:translateX(-98px); font-size:1.85rem; font-weight:700; color:#fff;}
+main .esg_chapter1 .bg1 .explanation p {
+    color:#fff;
+    background:rgba(0,0,0,0.4); 
+    font-size:1.25rem; line-height:40px;
+    padding:20px; 
+}
+main .esg_chapter2 {margin-bottom:130px; position: relative; width:100%;}
 main .esg_chapter2 img {}
 main .esg_chapter2 .bg2 {
     width:100%;
@@ -29,9 +45,14 @@ main .esg_chapter2 .bg2 {
 }
 main .esg_chapter2 .bg2 h2 {font-size:1.85rem; font-weight:600; color:#FFf;}
 main .esg_chapter2 .bg2 h2 em {font-size:1.85rem; color:#F4A174;}
-main .esg_chapter2 .bg2 p {line-height:40px; font-size:1.1rem; color:#fff;}
-main .esg_chapter2 .b2_btm {display:flex; align-items: center; justify-content:space-evenly;}
-main .esg_chapter2 .b2_btm .icon {display:flex; margin-top:30px;}
+main .esg_chapter2 .bg2 p {
+    line-height:40px; font-size:1.1rem;
+    color:#fff;
+    background:rgba(0,0,0,0.4);
+    padding:20px; 
+    }
+main .esg_chapter2 .b2_btm {display:flex; align-items: center; justify-content:space-evenly;  margin-top:50px;}
+main .esg_chapter2 .b2_btm .icon {display:flex;}
 main .esg_chapter2 .b2_btm .icon li {
     display:flex;
     flex-flow:column nowrap; 
@@ -49,18 +70,29 @@ main .esg_chapter2 .b2_btm .icon li .img_icon img {
 main .esg_chapter2 .b2_btm .icon li span {margin-top:15px;}
 main .esg_chapter2 .b2_btm p {line-height:1.5em; font-size:1.1rem;}
 main .esg_chapter3 {position: relative; width:100%;}
-main .esg_chapter3 > img {opacity:0.3;}
+main .esg_chapter3 > img {}
 main .esg_chapter3 .bg3 {
     width:100%;
     position:absolute; top:30%; left:0;
     display:flex;
     align-items: center; justify-content:space-around;
 }
-main .esg_chapter3 .bg3 h2 {font-size:1.85rem; font-weight:600; color:#000;}
+main .esg_chapter3 .bg3 h2 {font-size:1.85rem; font-weight:600; color:#fff; transform:translateX(-30px);}
 main .esg_chapter3 .bg3 h2 em {font-size:1.85rem; font-weight:600; color:#0dcb14;}
-main .esg_chapter3 .bg3 p {line-height:40px; font-size:1.1rem; font-weight:500;}
-main .esg_chapter3 .icon_btn2 {display:flex; align-items: center; justify-content:space-around; margin-bottom:280px;}
-main .esg_chapter3 .icon_btn2 ul {display:flex; margin-top:30px;}
+main .esg_chapter3 .bg3 p {
+    color:#fff;
+    background:rgba(0,0,0,0.4);
+    padding:20px;
+    line-height:40px; 
+    font-size:1.1rem; font-weight:500;
+}
+main .esg_chapter3 .icon_btn2 {
+    display:flex; align-items: center; 
+    justify-content:space-around; 
+    margin-bottom:130px;
+    margin-top:50px;
+}
+main .esg_chapter3 .icon_btn2 ul {display:flex;}
 main .esg_chapter3 .icon_btn2 ul li {display:flex; flex-flow:column nowrap; align-items: center; margin-right:50px;}
 main .esg_chapter3 .icon_btn2 ul li:last-child {margin-right:0;}
 main .esg_chapter3 .icon_btn2 ul li .img_icon {
