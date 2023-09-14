@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="대상그룹,대상그룹 경영이념, daesang">
     <meta name="description" content="대상그룹은 사람과 자연, 모두가 건강한 세상을 위해 변화와 혁신을 선도하는 기업으로 나아가겠습니다.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+    </style>
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
@@ -15,6 +18,7 @@
     <title>대상그룹 :: ESG</title>
 </head>
 <body>
+    <a href="#" id="scrolltop"><img src="./images/top.png" alt="스크롤버튼"></a>
     <header>
         <div class="h_all">
             <h1><a href="./index.html"><img src="./images/logo/logo_color.png" alt="대원그룹로고"></a></h1>
@@ -51,7 +55,7 @@
             <nav class="menu">
                 <ul class="m_all">
                     <li>
-                        <a href="./sub1.html">대상소개</a>
+                        <a href="./sub1.html" class="menu_title">대상소개</a>
                         <ul>
                             <li><a href="./sub1.html">Respect Tree</a></li>
                             <li><a href="./sub2.html">CI</a></li>
@@ -61,24 +65,24 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">사업소개</a>
+                        <a href="./sub1.html" class="menu_title">사업소개</a>
                         <ul >
-                            <li><a href="#">식품사업</a></li>
-                            <li><a href="#">소재사업</a></li>
+                            <li><a href="./sub2.html">식품사업</a></li>
+                            <li><a href="./sub3.html">소재사업</a></li>
                             <li><a href="#">건강&뉴트리션사업</a></li>
                             <li><a href="#">축육&유통사업</a></li>
                             <li><a href="#">인프라&기타사업</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">IR</a>
+                        <a href="./sub2.html" class="menu_title">IR</a>
                         <ul>
                             <li><a href="#">재무정보</a></li>
                             <li><a href="#">IR자료실</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">그룹소식</a>
+                        <a href="./sub3.html" class="menu_title">그룹소식</a>
                         <ul>
                             <li><a href="#">대상이야기</a></li>
                             <li><a href="#">NEWS</a></li>
@@ -90,7 +94,6 @@
         </div>
     </header>
     <main>
-        <button type="button" id="scrolltop"><img src="./images/top.png" alt="스크롤버튼"></button>
         <ul class="page_btn">
             <li><a href="./sub3.html">Environment</a></li>
             <li><a href="./sub2.html">Social</a></li>
@@ -208,5 +211,6 @@
         </div>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="./js/scroll.js"></script>
 </body>
 </html>

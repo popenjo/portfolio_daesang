@@ -1,15 +1,3 @@
-// 버튼 누를시 상단으로 이동
-const up = document.querySelector('#scrolltop')
-console.log(up)
-
-up.addEventListener('click', function () {
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth' // 스크롤을 부드럽게 이동
-    });
-});
-
 // 오픈 버튼 생성
 const menu_btn = document.querySelector('.menu_btn')
 console.log(menu_btn)
@@ -70,44 +58,3 @@ search_closer.addEventListener('click',function(){
 window.addEventListener('scroll', function () {
     search_page.style.transform = 'translateY(-100%)';
 });
-
-// 스크롤 시 한 섹션식 이동
-// window.onload = function () {
-//     const sections = document.querySelectorAll('.section'); // .section 클래스를 가진 모든 요소 선택
-//     const totalSections = sections.length;
-    
-//     sections.forEach(function (section, index) {
-//         section.addEventListener('mousewheel', function (event) {
-//             event.preventDefault();
-//             let delta = 0;
-
-//             if (!event) event = window.event;
-//             if (event.wheelDelta) {
-//                 delta = event.wheelDelta / 120;
-//                 if (window.opera) delta = -delta;
-//             } else if (event.detail)
-//                 delta = -event.detail / 3;
-
-//             let moveTop = window.scrollY;
-            
-//             // wheel down : move to next section
-//             if (delta < 0) {
-//                 if (index !== totalSections - 1) {
-//                     try {
-//                         moveTop = sections[index + 1].getBoundingClientRect().top + window.scrollY;
-//                     } catch (e) { }
-//                 }
-//             }
-//             // wheel up : move to previous section
-//             else {
-//                 if (index !== 0) {
-//                     try {
-//                         moveTop = sections[index - 1].getBoundingClientRect().top + window.scrollY;
-//                     } catch (e) { }
-//                 }
-//             }
-
-//             window.scrollTo({ top: moveTop, left: 0, behavior: 'smooth' });
-//         });
-//     });
-// }

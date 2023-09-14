@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="대상그룹, 대상, daesang">
     <meta name="description" content="대상그룹은 사람과 자연, 모두가 건강한 세상을 위해 변화와 혁신을 선도하는 기업으로 나아가겠습니다.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+    </style>
+    <!-- style -->
+    <link rel="stylesheet" href="./style/jquery.fullPage.css">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
-    <!-- style -->
-    <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/media.css">
     <title>대상그룹</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+    <a href="#" id="scrolltop"><img src="./images/top.png" alt="스크롤버튼"></a>
     <header>
         <div class="h_all">
             <h1><a href="./index.html"><img src="./images/logo/logo_whiht.png" alt="대원그룹로고"></a></h1>
@@ -37,7 +40,7 @@
         <div class="searchpage">
             <fieldset>
                 <legend class="skip">검색하기</legend>
-                <input type="text" id="searchtxt" placeholder="검색어를 입력해주세요" maxlength="16">
+                <input type="text" id="searchtxt" placeholder="검색어를 입력해주세요" maxlength="12">
                 <button type="button" id="search_closer">
                     <span></span>
                     <span></span>
@@ -52,7 +55,7 @@
             <nav class="menu">
                 <ul class="m_all">
                     <li>
-                        <a href="./sub1.html">대상소개</a>
+                        <a href="./sub1.html" class="menu_title">대상소개</a>
                         <ul>
                             <li><a href="./sub1.html">Respect Tree</a></li>
                             <li><a href="./sub2.html">CI</a></li>
@@ -62,24 +65,24 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">사업소개</a>
+                        <a href="./sub1.html" class="menu_title">사업소개</a>
                         <ul >
-                            <li><a href="#">식품사업</a></li>
-                            <li><a href="#">소재사업</a></li>
+                            <li><a href="./sub2.html">식품사업</a></li>
+                            <li><a href="./sub3.html">소재사업</a></li>
                             <li><a href="#">건강&뉴트리션사업</a></li>
                             <li><a href="#">축육&유통사업</a></li>
                             <li><a href="#">인프라&기타사업</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">IR</a>
+                        <a href="./sub2.html" class="menu_title">IR</a>
                         <ul>
                             <li><a href="#">재무정보</a></li>
                             <li><a href="#">IR자료실</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">그룹소식</a>
+                        <a href="./sub3.html" class="menu_title">그룹소식</a>
                         <ul>
                             <li><a href="#">대상이야기</a></li>
                             <li><a href="#">NEWS</a></li>
@@ -91,16 +94,16 @@
         </div>
     </header>
     <main>
-        <button type="button" id="scrolltop"><img src="./images/top.png" alt="스크롤버튼"></button>
         <div class="first section">
             <img src="./images/mouse_whiht.png" alt="마우스스크롤">
             <video src="./video/daesang.mp4" autoplay muted loop></video>
         </div>
         <div class="second section"><!-- bgimg -->
+            <img src="./images/bg2.jpg" alt="">
             <div class="second_all">
                 <div class="s_top">
                     <div class="s_title">
-                        <p>DAESANG Respect Tree</p>
+                        <h2>DAESANG Respect Tree</h2>
                         <p>대상은 <em>존중의 힘</em>으로 <em>건강한 세상을</em> 만들어 갑니다</p>
                         <p>Respect Tree는 대상그룹이 창조하는 모든 가치의 시작인 경영이념에서 시작됩니다.<br>대상그룹의 브랜드 아이덴티티를 반영한 행동방식을 통해 브랜드 미션을 달성하는 가치 체계로,<br>보다 견고하고 지속성 높은 대상그룹이 되기 위한 이정표가 될 것입니다.</p>
                     </div>
@@ -141,6 +144,7 @@
             </div>
         </div>
         <div class="third section">
+            <img src="./images/s6-bg.png" alt="">
             <div class="third_all">
                 <p class="t_title">미래의 <em>혁신적인 고민</em>을 하며<br>일류 기업으로 도약합니다.</p>
                 <p>대상그룹의 모든 기업활동의 출발은 고객을 위한 가치 창조에서 시작됩니다.<br>대상그룹은 고객의 신뢰와 사랑을 바탕으로 글로벌 기업으로 나아갑니다.</p>
@@ -230,69 +234,53 @@
             </div>
         </div>
         <div class="fifth section">
-            <div class="f_left">
-                <div class="f_left_all">
-                    <div class="ir_title">
-                        <h3>IR</h3>
+            <div class="fifth_all">
+                <div class="f_left">
+                    <div class="f_left_all">
+                        <div class="ir_title">
+                            <h3>IR</h3>
+                            <span></span>
+                        </div>
+                        <p>대상그룹 함께 <em>성장으로</em><br>나아갈 <em>당신을 초대합니다.</em></p>
+                        <div class="announcement">
+                            <a href="#">공고안내</a>
+                            <img src="./images/right_blue.png" alt="공고안내페이지">
+                        </div>
+                    </div>
+                </div>
+                <dis class="line"></dis>
+                <div class="f_right">
+                    <div class="finance_title">
+                        <h3>finance</h3>
                         <span></span>
                     </div>
-                    <p>대상그룹 함께 <em>성장으로</em><br>나아갈 <em>당신을 초대합니다.</em></p>
-                    <div class="announcement">
-                        <a href="#">공고안내</a>
-                        <img src="./images/right_blue.png" alt="공고안내페이지">
+                    <p>믿을 수 있는 파트너<br>대상그룹의 사업성과를 소개합니다.</p>
+                    <div class="finance">
+                        <a href="#">재무정보</a>
+                        <img src="./images/right_blue.png" alt="재무정보페이지">
                     </div>
                 </div>
             </div>
-            <div class="f_right">
-                <div class="finance_title">
-                    <h3>finance</h3>
-                    <span></span>
+            <div class="footer">
+                <div class="footer_left">
+                    <h1><a href="./index.html"><img src="./images/logo/logo_color.png" alt="대상그룹로고"></a></h1>
+                    <div class="add_all">
+                        <address>대상홀딩스㈜<br>서울특별시 중구 세종대로9길41 퍼시픽타워 2층<br>TEL: 02-2211-6553<br>FAX: 02-2214-6511</address>
+                        <p class="copyright">© 2019 DAESANG HOLDINGS. All Rights reserved.</p>
+                    </div>
                 </div>
-                <p>믿을 수 있는 파트너<br>대상그룹의 사업성과를 소개합니다.</p>
-                <div class="finance">
-                    <a href="#">재무정보</a>
-                    <img src="./images/right_blue.png" alt="재무정보페이지">
+                <div class="affiliate">
+                    <a href="#">계열사 바로가기</a>
+                    <img src="./images/right_blue.png" alt="계열사바로가기">
                 </div>
             </div>
         </div>
     </main>
-    <footer>
-        <div class="footer_left">
-            <h1><a href="./index.html"><img src="./images/logo/logo_color.png" alt="대상그룹로고"></a></h1>
-            <div class="add_all">
-                <address>대상홀딩스㈜<br>서울특별시 중구 세종대로9길41 퍼시픽타워 2층<br>TEL: 02-2211-6553<br>FAX: 02-2214-6511</address>
-                <p class="copyright">© 2019 DAESANG HOLDINGS. All Rights reserved.</p>
-            </div>
-        </div>
-        <div class="affiliate">
-            <a href="#">계열사 바로가기</a>
-            <img src="./images/right_blue.png" alt="계열사바로가기">
-        </div>
-    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/jquery.fullPage.js"></script>
     <script src="./js/script.js"></script>
     <script>
-        $(document).ready(function () {
-            var $html = $("html, body"); // html 및 body 선택
-            var page = 1;
-            var lastPage = $(".section").length;
-
-            $html.animate({ scrollTop: 0 }, 10);
-
-            $(window).on("wheel", function (e) {
-                if ($html.is(":animated")) return;
-
-                if (e.originalEvent.deltaY > 0) {
-                    if (page == lastPage) return;
-                    page++;
-                } else if (e.originalEvent.deltaY < 0) {
-                    if (page == 1) return;
-                    page--;
-                }
-
-                var posTop = (page - 1) * $(window).height();
-                $html.animate({ scrollTop: posTop }, 500); // 스크롤 애니메이션 추가 (0.5초 속도)
-            });
-        });
+        $('main').fullpage({})
     </script>
 </body>
 </html>
