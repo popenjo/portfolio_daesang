@@ -23,74 +23,7 @@
 </head>
 <body>
     <a href="#" id="scrolltop"><img src="./images/top.png" alt="스크롤버튼"></a>
-    <header>
-        <div class="h_all">
-            <h1><a href="./index.html"><img src="./images/logo/logo_color_whiht.png" alt="대원그룹로고"></a></h1>
-            <div class="h_right">
-                <button type="button" id="search_btn"><img src="./images/icon_search.png" alt="검색하기버튼"></button>
-                <button type="button" class="menu_btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
-        <div class="searchpage">
-            <fieldset>
-                <legend class="skip">검색하기</legend>
-                <input type="text" id="searchtxt" placeholder="검색어를 입력해주세요" maxlength="16">
-                <button type="button" id="search_closer">
-                    <span></span>
-                    <span></span>
-                </button>
-            </fieldset>
-        </div>
-        <div class="menu_all">
-            <div class="closer">
-                <span></span>
-                <span></span>
-            </div>
-            <nav class="menu">
-                <ul class="m_all">
-                    <li>
-                        <a href="./sub1.html" class="menu_title">대상소개</a>
-                        <ul>
-                            <li><a href="./sub1.html">Respect Tree</a></li>
-                            <li><a href="./sub2.html">CI</a></li>
-                            <li><a href="#">대상의 역사</a></li>
-                            <li><a href="#">계열사현황</a></li>
-                            <li><a href="#">윤리경영</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="./sub1.html" class="menu_title">사업소개</a>
-                        <ul >
-                            <li><a href="./sub2.html">식품사업</a></li>
-                            <li><a href="./sub3.html">소재사업</a></li>
-                            <li><a href="#">건강&뉴트리션사업</a></li>
-                            <li><a href="#">축육&유통사업</a></li>
-                            <li><a href="#">인프라&기타사업</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="./sub2.html" class="menu_title">IR</a>
-                        <ul>
-                            <li><a href="#">재무정보</a></li>
-                            <li><a href="#">IR자료실</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="./sub3.html" class="menu_title">그룹소식</a>
-                        <ul>
-                            <li><a href="#">대상이야기</a></li>
-                            <li><a href="#">NEWS</a></li>
-                            <li><a href="./sub3.html">ESG</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <?php include('./header.php') ?>
     <main>
         <div class="title_bg">
             <p>다양성을 존중하며 고객과 소통하며<br>국민의 건강을 책임지는 기업 입니다.</p>
@@ -244,21 +177,7 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div class="footer_all">
-            <div class="footer_left">
-                <h1><a href="./index.html"><img src="./images/logo/logo_color.png" alt="대상그룹로고"></a></h1>
-                <div class="add_all">
-                    <address>대상홀딩스㈜<br>서울특별시 중구 세종대로9길41 퍼시픽타워 2층<br>TEL: 02-2211-6553<br>FAX: 02-2214-6511</address>
-                    <p class="copyright">© 2019 DAESANG HOLDINGS. All Rights reserved.</p>
-                </div>
-            </div>
-            <div class="affiliate">
-                <a href="#">계열사 바로가기</a>
-                <img src="./images/right_blue.png" alt="계열사바로가기">
-            </div>
-        </div>
-    </footer>
+    <?php include('./footer.php') ?>
     <script src="./js/script.js"></script>
     <script src="./js/scroll.js"></script>
 </body>
