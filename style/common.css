@@ -1,4 +1,4 @@
-body, html {scroll-behavior:smooth;}
+body, html {scroll-behavior:smooth; width:100%; overflow-x:auto !important;}
 
 /* all */
 header, main, footer {letter-spacing:-0.02em; min-width:1920px;}

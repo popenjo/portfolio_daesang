@@ -10,7 +10,7 @@ main .title_bg p {
     color:#fff; line-height:70px;
 }
 main .page_btn li:hover {background:#fff;}
-main .page_btn li a {color:#fff; font-size:1.25rem;}
+main .page_btn li a {color:#fff;}
 main .page_btn li:hover a {color:#0279BB;}
 main .page_btn li:first-child {background:#fff;}
 main .page_btn li:first-child a {color:#0279BB;}

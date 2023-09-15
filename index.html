@@ -18,7 +18,7 @@
     <title>대상그룹</title>
 </head>
 <body>
-    <a href="#" id="scrolltop"><img src="./images/top.png" alt="스크롤버튼"></a>
+    <a href="#a" id="scrolltop"><img src="./images/top.png" alt="스크롤버튼"></a>
     <header>
         <div class="h_all">
             <h1><a href="./index.html"><img src="./images/logo/logo_whiht.png" alt="대원그룹로고"></a></h1>
@@ -96,7 +96,7 @@
     <main>
         <div class="first section">
             <img src="./images/mouse_whiht.png" alt="마우스스크롤">
-            <video src="./video/daesang.mp4" autoplay muted loop></video>
+            <video src="./video/daesang.mp4" deta-autoplay muted loop></video>
         </div>
         <div class="second section"><!-- bgimg -->
             <img src="./images/bg2.jpg" alt="">
@@ -280,7 +280,9 @@
     <script src="./js/jquery.fullPage.js"></script>
     <script src="./js/script.js"></script>
     <script>
-        $('main').fullpage({})
+        $('main').fullpage({
+            anchors:['a','b','c,','d']
+        })
     </script>
 </body>
 </html>
